@@ -202,7 +202,7 @@ local function doRebirth()
     end
     
     if isRunning and player.leaderstats.Strength.Value >= strengthTarget then
-        managePets("Tribal Overlord")
+        managePets("Rare Boss Pet")
         task.wait(0.25)
         
         local before = rebirthsStat.Value
@@ -215,7 +215,7 @@ end
 
 local function fastRebirthLoop()
     while isRunning do
-        managePets("Swift Samurai")
+        managePets("Rare Boss Pet")
         doRebirth()
         task.wait(0.5)
     end
@@ -802,9 +802,9 @@ FarmingTab:AddButton("Anti Lag", function()
     darkenSky()
 end)
 
-FarmingTab:AddButton("Equip Swift Samurai", function()
+FarmingTab:AddButton("Equip Rare Boss Pet", function()
     unequipPets()
-    equipPetsByName("Swift Samurai")
+    equipPetsByName("Rare Boss Pet")
 end)
 
 local infoTab = window:AddTab("Info")
